@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Luong</p>
+<input type="number" id="luong"> <br>
+<p>Gio lam viec</p>
+<input type="number" id="gio"> <br>
+<button onclick="result()"> Ket qua</button>
+<script>
+    let thuong;
+    let money = document.getElementById("luong").value;
+    let hour = document.getElementById("gio").value;
+    function result() {
+        if(hour >= 200){
+            thuong = money * 0.2;
+        }else if (100 <= hour < 200){
+            thuong = money *0.1;
+        }else{
+            alert('Khong duoc thuong')
+        }
+    }
+</script>
+</body>
+</html>

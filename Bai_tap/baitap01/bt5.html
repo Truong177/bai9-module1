@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="num1" placeholder="Điểm kiểm tra ">
+<input type="number" id="num2" placeholder="Điểm thi giữa kỳ">
+<input type="number" id="num3" placeholder="Điểm thi cuối kỳ">
+<button onclick="sum()">Sum</button>
+<p id="ketqua">Bạn được học sinh gì?</p>
+<script>
+    function sum() {
+        let kt = parseFloat(document.getElementById("num1").value);
+        let giuaky = parseFloat(document.getElementById("num2").value);
+        let cuoiky = parseFloat(document.getElementById("num3").value);
+        let tongdiem = (kt + giuaky + cuoiky) / 3;
+        if (tongdiem >= 8 && tongdiem < 10) {
+            document.getElementById("ketqua").innerText = "Bạn được học sinh giỏi";
+        } else if (tongdiem >= 6.5 && tongdiem < 8) {
+            document.getElementById("ketqua").innerText = "Bạn được học sinh Khá";
+        } else if (tongdiem > 5 && tongdiem <= 6.5) {
+            document.getElementById("ketqua").innerText = "Bạn được học sinh Trung Bình";
+        } else {
+            document.getElementById("ketqua").innerText = "Bạn đã bị trượt";
+        }
+    }
+</script>
+</body>
+</html>

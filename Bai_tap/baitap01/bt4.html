@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="num1">
+<input type="number" id="num2">
+<input type="number" id="num3">
+<button onclick="check()">check</button>
+<p id="result"> Số lớn nhất là : </p>
+<script>
+    function check() {
+        let a = +document.getElementById("num1").value;
+        let b = +document.getElementById("num2").value;
+        let c = +document.getElementById("num3").value;
+        let max;
+        if (a > b && a > c){
+            max = a;
+            document.getElementById("result").innerText = max;
+        }else if (b > c && b > a){
+            max = b;
+            document.getElementById("result").innerText = max;
+        }else {
+            max = c;
+            document.getElementById("result").innerText = max;
+        }
+    }
+</script>
+</body>
+</html>

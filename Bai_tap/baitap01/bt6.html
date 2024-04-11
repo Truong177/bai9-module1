@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="doanhso" placeholder="Doanh số ">
+<button onclick="tinhhoahong()">Sum</button>
+<p id="ketqua">Bạn được thưởng số tiền là : </p>
+<script>
+    function tinhhoahong() {
+        let thuong;
+        let doanhso = parseFloat(document.getElementById("doanhso").value);
+        if (doanhso <= 0){
+            document.getElementById("ketqua").innerText = "Bạn không được thưởng"
+        }else if (doanhso <= 200){
+            thuong = doanhso * 0.05;
+            document.getElementById("ketqua").innerText = "Bạn được thưởng " +thuong
+        }else if (doanhso <= 500){
+            thuong = doanhso * 0.1;
+            document.getElementById("ketqua").innerText = "Bạn được thưởng " +thuong
+        }else {
+            thuong = doanhso * 0.15;
+            document.getElementById("ketqua").innerText = "Bạn được thưởng " +thuong
+        }
+    }
+</script>
+</body>
+</html>

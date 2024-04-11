@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" placeholder="Nhập cạnh của hình vuông " id="square">
+<button onclick="Square()">Nhập</button>
+<script>
+    function Square() {
+        let square = document.getElementById("square").value;
+        let S = square * square;
+        document.write("Diện tích hình vuông là " +S);
+    }
+</script>
+</body>
+</html>

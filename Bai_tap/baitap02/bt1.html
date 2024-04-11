@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" placeholder="Độ C" id="nhietdo">
+<button onclick="chuyendoi()">Nhập</button>
+<script>
+    function chuyendoi() {
+        let doC = document.getElementById("nhietdo").value;
+        let doF = (9 * doC /5) +32;
+        document.write(" Result = " +doF);
+    }
+</script>
+</body>
+</html>

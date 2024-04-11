@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let luong = prompt("Luong cua ban la ")
+    let giolamviec = prompt("Gio lam viec cua ban ")
+    let thuong ;
+    if(giolamviec >= 200){
+        thuong = luong * 0.2;
+    }else if (100 <= giolamviec < 200){
+        thuong = luong * 0.1;
+    }else{
+        alert("khong duoc thuong")
+    }
+    alert("Tien thuong la " +thuong)
+
+</script>
+</body>
+</html>

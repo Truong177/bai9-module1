@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<table>
+    <tr>
+        <input type="text" id="print">
+    </tr>
+    <tr>
+        <td><button value="1" onclick="clickButton(1)" name="num">1</button></td>
+        <td><button value="2" onclick="clickButton(2)" name="num">2</button></td>
+        <td><button value="3" onclick="clickButton(3)" name="num">3</button></td>
+        <td><button value="+" onclick="clickButton('+')">+</button></td>
+
+    </tr>
+    <tr>
+        <td><button value="4" onclick="clickButton(4)" name="num">4</button></td>
+        <td><button value="5" onclick="clickButton(5)" name="num">5</button></td>
+        <td><button value="6" onclick="clickButton(6)" name="num">6</button></td>
+        <td><button value="-" onclick="clickButton('-')">-</button></td>
+    </tr>
+    <tr>
+        <td><button value="7" onclick="clickButton(7)" name="num">7</button></td>
+        <td><button value="8" onclick="clickButton(8)" name="num">8</button></td>
+        <td><button value="9" onclick="clickButton(9)" name="num">9</button></td>
+        <td><button value="*" onclick="clickButton('*')">x</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="clean()">C</button></td>
+        <td><button value="0" onclick="clickButton(0)" name="num">0</button></td>
+        <td><button onclick="getResult()" value="=" name="result">=</button></td>
+        <td><button value="/" onclick="clickButton('/')">/</button></td>
+    </tr>
+    <p id="ketqua"></p>
+</table>
+<!--<script>-->
+<!--    function displayValue(new_value){-->
+<!--        let input_v = document.getElementById('print').value;-->
+<!--        input_v += new_value;-->
+<!--        document.getElementById('print').value = input_v;-->
+<!--    }-->
+<!--    function result(){-->
+<!--        let result = eval(document.getElementById('print').value)-->
+<!--        document.getElementById('print').value = result-->
+<!--    }-->
+<!--    function clean(){-->
+<!--        document.getElementById('print').value = ""-->
+<!--    }-->
+<!--</script>-->
+<script src="caculator.js"></script>
+</body>
+</html>
